@@ -34,7 +34,7 @@ void Circle::setArea(double a) {
         throw std::invalid_argument("Area cannot be negative");
     }
     area = a;
-    updateRadius();
+    radius = std::sqrt(area / M_PI);
     updateFerence();
 }
 
