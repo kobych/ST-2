@@ -1,6 +1,7 @@
 // Copyright 2025 UNN-CS
-#include "circle.h"
+
 #include "tasks.h"
+#include "circle.h"
 #include <cmath>
 
 double calculateGap() {
