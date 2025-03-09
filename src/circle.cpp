@@ -1,25 +1,38 @@
 // Copyright 2022 UNN-CS
 #include "circle.h"
 #include <cstdint>
+#include <stdexcept>
 #include <cmath>
 
 Circle::Circle(double r) {
+    if (r < 0) {
+        throw std::invalid_argument("Radius cannot be negative");
+    }
     setRadius(r);
 }
 
 void Circle::setRadius(double r) {
+    if (r < 0) {
+        throw std::invalid_argument("Radius cannot be negative");
+    }
     radius = r;
     updateFerence();
     updateArea();
 }
 
 void Circle::setFerence(double f) {
+    if (f < 0) {
+        throw std::invalid_argument("Ference cannot be negative");
+    }
     ference = f;
     updateRadius();
     updateArea();
 }
 
 void Circle::setArea(double a) {
+    if (a < 0) {
+        throw std::invalid_argument("Area cannot be negative");
+    }
     area = a;
     updateRadius();
     updateFerence();
