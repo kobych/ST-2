@@ -1,10 +1,10 @@
 // Copyright 2025 UNN-CS Team
 
-#include <gtest/gtest.h>
-#include <cstdint>
 #include "circle.h"
 #include "tasks.h"
+#include <cstdint>
 #include <cmath>
+#include <gtest/gtest.h>
 
 TEST(CircleTest, Initialization) {
     Circle c(5);
